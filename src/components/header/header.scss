@@ -1,0 +1,52 @@
+@import '../../style/variables.scss';
+
+.header {
+    min-height: 100vh;
+    padding-top: 30px;
+    background: $bg-color;
+    &_nav {
+        height: 43px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 43px;
+        width: 79px;
+        padding: 14px 27px;
+        background-color: $orange;
+
+        font-size: 20px;
+        color: $text-color;
+    }
+    &_img {
+        width: 1310px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .bottle {
+        position: fixed;
+        right: 50%;
+        transform: translateX(50%) rotate(38deg);
+        height: 711px;
+        width: 355px;
+        z-index: 5;
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 315px;
+            right: 10px;
+            height: 186px;
+            width: 186px;
+            border-radius: 100%;
+
+            filter: blur(200px);
+            background-color: $orange;
+            z-index: -1;
+        }
+    }
+}

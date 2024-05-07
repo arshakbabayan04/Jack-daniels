@@ -1,0 +1,66 @@
+@import '../../style/variables.scss';
+
+.history {
+    min-height: 100vh;
+    background-color: $bg-color;
+    padding: 167px 0 230px 0;
+    &_wrapper {
+        width: 686px;
+    }
+    &_header {
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 0.77;
+        letter-spacing: -0.1em;
+        color: $text-color;
+    }
+    &_descr {
+        margin-top: 20px;
+        margin-left: 3px;
+        width: 549px;
+
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $text-color;
+    }
+    &_btn {
+        padding: 14px 27px;
+        margin-top: 34px;
+        width: 159px;
+        height: 43px;
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 0.77;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #FFFFFF;
+        color: #232323;
+        &:hover {
+            background-color: $orange;
+            color: $text-color;
+        }
+    }
+    &_drop {
+        &_legend {
+            position: absolute;
+            height: 303px;
+            width: 319px;
+            top: -155px;
+            right: -9px;
+            background: url('../../img/drop-legend.svg') center center/cover no-repeat;
+        }
+        &_1866 {
+            position: absolute;
+            width: 188px;
+            height: 186px;
+            bottom: -170px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url('../../img/drop-1866.svg') center center/cover no-repeat;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import '../../style/variables.scss';
+
+.whiskey_info {
+    min-height: 100vh;
+    padding: 116px 0 125px 0;
+    background-color: $bg-color;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 67px;
+        &:first-child {
+            text-align: left;
+            width: 408px;
+        }
+        &:last-child {
+            text-align: right;
+            width: 380px;
+            .whiskey_info_title {
+                display: inline-block;
+            }
+        }
+    }
+    &_title {
+        position: relative;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 0.77;
+        letter-spacing: -0.1em;
+        color: $text-color;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            bottom: -2px;
+            left: 2px;
+            background-color: rgba(223, 96, 25, 0.8);
+        }
+    }
+    &_descr {
+        margin-top: 13px;
+        width: 370px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $text-color;
+    }
+}
